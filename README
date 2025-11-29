@@ -1,0 +1,64 @@
+# Sumo Discord Bot 🚀
+
+[![Discord](https://discord.com/api/guilds/1234567890/widget.png)](https://discord.gg/your-invite)
+
+**Modern Discord bot with interactive embed builders!** Built with discord.py, slash commands, and modals.
+
+## ✨ Features
+
+- 🎨 **`/embed`** - Simple 3-field embed builder
+- ⚡ **`/embed_pro`** - Advanced 5-field embed builder  
+- 📖 **`/embed_preview`** - Usage guide + external tools
+- 🔧 **Fully interactive** modals (no typing required)
+- 🎯 **Image optional** - Works with or without images
+- 🌈 **Custom colors** - HEX color picker (#FAD5A5 default)
+
+## 📱 Commands
+
+### `/embed "Your Title"`
+**Simple Embed Builder** (3 fields - **GUARANTEED** to work)
+
+| Field | Description | Required |
+|-------|-------------|----------|
+| **Description** | Main embed text (paragraph) | ❌ No |
+| **Color** | HEX color (`#FAD5A5` default) | ❌ No |
+| **Image URL** | Direct image link | ❌ No |
+
+**Example:** `/embed "Welcome to Sumo!"`
+
+---
+
+### `/embed_pro "Your Title"`
+**Advanced Embed Builder** (5 fields - **Professional**)
+
+| Field | Description | Required |
+|-------|-------------|----------|
+| **Description** | Main embed text | ❌ No |
+| **Color** | HEX color (`#FAD5A5` default) | ❌ No |
+| **Image URL** | Main embed image | ❌ No |
+| **Thumbnail URL** | Small side image | ❌ No |
+| **Footer** | Bottom text | ❌ No |
+
+**Example:** `/embed_pro "Server Rules"`
+
+---
+
+### `/embed_preview`
+**Usage Guide** - Shows all commands + external embed builder link
+
+Simple: /embed "Title"
+Pro: /embed_pro "Title"
+Advanced: https://glitchii.github.io/embedbuilder/
+
+## 🔧 Customization
+
+**Add new commands:**
+1. Create `cogs/mycommand.py`
+2. Add to `bot.py` load loop
+3. Restart → Auto-syncs!
+
+## 📸 Image Tips
+✅ WORKS: https://i.imgur.com/abc123.png
+✅ WORKS: https://cdn.discordapp.com/attachments/123/456/image.png
+❌ NO: Google Drive links
+❌ NO: Instagram/Twitter
